@@ -2,7 +2,7 @@
 # Directus deployment on kubernetes from docker-compose.yml and custom Dockerfile
 
 The docker directus image is customized with the spatialite extension and a patch fixing this issue:
-https://github.com/directus/directus/issues/17002
+<https://github.com/directus/directus/issues/17002>
 
 Custom directus docker image name:
 ghcr.io/noops-land/directus-k8s:latest
