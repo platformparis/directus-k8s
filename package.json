@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "directus start",
     "debug": "NODE_ENV=development npx --node-options=--inspect directus start",
-    "deploy": "docker-compose --compatibility config | kompose convert -c -o helm -f - ; rm helm/templates/app-default-networkpolicy.yaml; helm upgrade directus-k8s ./helm -n directus",
-    "install": "docker-compose --compatibility config | kompose convert -c -o helm -f - ; rm helm/templates/app-default-networkpolicy.yaml; helm install directus-k8s ./helm -n directus"
+    "deploy-k8s": "docker-compose --compatibility config | kompose convert -c -o helm -f - ; rm helm/templates/app-default-networkpolicy.yaml; helm upgrade directus-k8s ./helm -n directus",
+    "install-k8s": "docker-compose --compatibility config | kompose convert -c -o helm -f - ; rm helm/templates/app-default-networkpolicy.yaml; helm install directus-k8s ./helm -n directus"
 
   },
   "keywords": [],
