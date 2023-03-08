@@ -25,7 +25,7 @@ docker-compose up --build
 On every commit on the main branch of this git repo, the workflow in [./.github/workflows](./.github/workflows) is executed.
 
 This github action updates the docker image in:
-[/pkgs/container/directus-k8s](/pkgs/container/directus-k8s)
+[/pkgs/container/directus-k8s](https://github.com/noops-land/directus-k8s/pkgs/container/directus-k8s)
 
 ## Installation on kubernetes
 ```sh
