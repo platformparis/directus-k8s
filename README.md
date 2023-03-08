@@ -1,10 +1,10 @@
 
 # Directus deployment on kubernetes from docker-compose.yml and custom Dockerfile
 
-This docker image is customized with the spatialite extension and a patch fixing this issue:
+The docker directus image is customized with the spatialite extension and a patch fixing this issue:
 https://github.com/directus/directus/issues/17002
 
-Docker image name:
+Custom directus docker image name:
 ghcr.io/noops-land/directus-k8s:latest
 
 ## Local development on macOS
@@ -22,10 +22,10 @@ docker-compose up --build
 
 ## Docker image building from github action
 
-On every commit on the main branch of this git repo, the workflow in .github/workflows is executed.
+On every commit on the main branch of this git repo, the workflow in [./.github/workflows](./.github/workflows) is executed.
 
 This github action updates the docker image in:
-pkgs/container/directus-k8s
+[/pkgs/container/directus-k8s](/pkgs/container/directus-k8s)
 
 ## Installation on kubernetes
 ```sh
