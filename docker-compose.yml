@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  directus-k8s:
+    build: .
+    image: ghcr.io/noops-land/directus-k8s:latest
+#    labels:
+#      kompose.image-pull-secret: "ghcr.io"
+    ports:
+      - 8055:8055
+    volumes:
+      - ./uploads:/directus/uploads
+      - ./database:/directus/database
+    #   - ./extensions:/directus/extensions
+    env_file:
+      - .env
