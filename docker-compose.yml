@@ -12,4 +12,5 @@ services:
       - ./database:/directus/database
     #   - ./extensions:/directus/extensions
     env_file:
+    # use env.example as a template
       - .env
