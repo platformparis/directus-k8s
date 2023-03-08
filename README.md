@@ -28,11 +28,13 @@ This github action updates the docker image in:
 [/pkgs/container/directus-k8s](https://github.com/noops-land/directus-k8s/pkgs/container/directus-k8s)
 
 ## Installation on kubernetes
+
 ```sh
 npm run install-k8s
 ```
 
 ## Deployment on kubernetes
+
 ```sh
 npm run deploy-k8s
 ```
